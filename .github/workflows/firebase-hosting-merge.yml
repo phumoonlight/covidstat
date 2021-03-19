@@ -15,8 +15,8 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_COVIDSTAT_2AE94 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_COVIDSTAT_PHUMO }}'
           channelId: live
-          projectId: covidstat-2ae94
+          projectId: covidstat-phumo
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels

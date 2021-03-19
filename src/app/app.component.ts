@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
-import { ApiService } from './services/api.service';
+import { ApiService } from './services/api.service'
 
 @Component({
   selector: 'app-root',
@@ -8,10 +8,9 @@ import { ApiService } from './services/api.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  isLoading: boolean = true;
+  isLoading: boolean = true
 
-  constructor(private api: ApiService) {
-  }
+  constructor(private api: ApiService) {}
 
   ngOnInit(): void {
     this.api.getTodayStat()

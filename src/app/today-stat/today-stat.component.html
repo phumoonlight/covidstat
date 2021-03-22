@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="stat-container">
+  <div class="stat-item confirmed">
+    <div class="number">{{ todayStat.confirmedCount | number }}</div>
+    <div class="label">Confirmed</div>
+  </div>
+  <div class="stat-item hospitalized">
+    <div class="number">{{ todayStat.hospitalizedCount | number }}</div>
+    <div class="label">Hospitalized</div>
+  </div>
+  <div class="stat-item recovered">
+    <div class="number">{{ todayStat.recoveredCount | number }}</div>
+    <div class="label">Recovered</div>
+  </div>
+  <div class="stat-item death">
+    <div class="number">{{ todayStat.deathCount | number }}</div>
+    <div class="label">Deaths</div>
+  </div>
+</div>

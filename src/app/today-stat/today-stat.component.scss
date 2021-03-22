@@ -1,0 +1,32 @@
+.stat-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 20px;
+  gap: 40px;
+  .stat-item {
+    display: grid;
+    gap: 5px;
+    &.confirmed {
+      color: rgb(255, 60, 0);
+    }
+    &.recovered {
+      color: rgb(30, 200, 120);
+    }
+    &.hospitalized {
+      color: rgb(0, 120, 255);
+    }
+    &.death {
+      color: rgb(44, 44, 44);
+    }
+    .label {
+      font-size: 20px;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+    .number {
+      font-weight: bold;
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+  }
+}

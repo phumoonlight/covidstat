@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core'
-
 import { environment } from 'src/environments/environment'
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class HeaderComponent implements OnInit {
   repoUrl: string = environment.repoUrl
 
   constructor() {}

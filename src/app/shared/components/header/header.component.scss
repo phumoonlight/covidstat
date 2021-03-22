@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  .name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .link-container {
+    display: flex;
+    letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+  .item {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .link {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: .5px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

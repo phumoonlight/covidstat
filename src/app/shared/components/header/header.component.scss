@@ -14,9 +14,13 @@ header {
   .link-container {
     display: flex;
     letter-spacing: 1px;
-    a {
+    .link-item {
       text-decoration: none;
       color: white;
+      margin: 0 15px;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

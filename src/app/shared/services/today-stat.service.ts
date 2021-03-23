@@ -35,6 +35,10 @@ export class TodayStatService {
       deathCount: response.Deaths ?? 0,
       hospitalizedCount: response.Hospitalized ?? 0,
       recoveredCount: response.Recovered ?? 0,
+      newConfirmedCount: response.NewConfirmed ?? 0,
+      newDeathCount: response.NewDeaths ?? 0,
+      newHospitalizedCount: response.NewHospitalized ?? 0,
+      newRecoveredCount: response.NewRecovered ?? 0,
     }
   }
 }

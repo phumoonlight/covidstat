@@ -2,15 +2,8 @@ import { Component, OnInit } from '@angular/core'
 
 import { TodayStatService } from '../shared/services/today-stat.service'
 import { TimelineStatService } from '../shared/services/timeline-stat.service'
-
 import { environment } from 'src/environments/environment'
-
-interface TodayStat {
-  confirmedCount: number | string
-  deathCount: number | string
-  hospitalizedCount: number | string
-  recoveredCount: number | string
-}
+import { TodayStat } from 'src/types/today-stat.type'
 
 interface GraphData {
   name: string
@@ -48,6 +41,10 @@ export class TodayStatComponent implements OnInit {
     deathCount: 0,
     hospitalizedCount: 0,
     recoveredCount: 0,
+    newConfirmedCount: 0,
+    newDeathCount: 0,
+    newHospitalizedCount: 0,
+    newRecoveredCount: 0,
   }
 
   constructor(
@@ -61,6 +58,10 @@ export class TodayStatComponent implements OnInit {
     this.todayStat.deathCount = todayStat.deathCount
     this.todayStat.hospitalizedCount = todayStat.hospitalizedCount
     this.todayStat.recoveredCount = todayStat.recoveredCount
+    this.todayStat.newConfirmedCount = todayStat.newConfirmedCount
+    this.todayStat.newDeathCount = todayStat.newDeathCount
+    this.todayStat.newHospitalizedCount = todayStat.newHospitalizedCount
+    this.todayStat.newRecoveredCount = todayStat.newRecoveredCount
     const timelineStatList = await this.timelineStatService.getStat()
     this.confirmedGraphData = [
       {

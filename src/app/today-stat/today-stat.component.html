@@ -1,7 +1,10 @@
 <app-header></app-header>
 <div class="stat-container">
   <div class="stat-item confirmed">
-    <div class="number">{{ todayStat.confirmedCount | number }}</div>
+    <div class="number">
+      <span class="total">{{ todayStat.confirmedCount | number }}</span>
+      <span class="new">{{ todayStat.newConfirmedCount | newStatCount }}</span>
+    </div>
     <div class="label">Confirmed</div>
     <div class="graph-wrapper">
       <ngx-charts-line-chart
@@ -15,7 +18,12 @@
     </div>
   </div>
   <div class="stat-item hospitalized">
-    <div class="number">{{ todayStat.hospitalizedCount | number }}</div>
+    <div class="number">
+      <span class="total">{{ todayStat.hospitalizedCount | number }}</span>
+      <span class="new">
+        {{ todayStat.newHospitalizedCount | newStatCount }}
+      </span>
+    </div>
     <div class="label">Hospitalized</div>
     <div class="graph-wrapper">
       <ngx-charts-line-chart
@@ -29,7 +37,10 @@
     </div>
   </div>
   <div class="stat-item recovered">
-    <div class="number">{{ todayStat.recoveredCount | number }}</div>
+    <div class="number">
+      <span class="total">{{ todayStat.recoveredCount | number }}</span>
+      <span class="new">{{ todayStat.newRecoveredCount | newStatCount }}</span>
+    </div>
     <div class="label">Recovered</div>
     <div class="graph-wrapper">
       <ngx-charts-line-chart
@@ -43,7 +54,10 @@
     </div>
   </div>
   <div class="stat-item death">
-    <div class="number">{{ todayStat.deathCount | number }}</div>
+    <div class="number">
+      <span class="total">{{ todayStat.deathCount | number }}</span>
+      <span class="new">{{ todayStat.newDeathCount | newStatCount }}</span>
+    </div>
     <div class="label">Deaths</div>
     <div class="graph-wrapper">
       <ngx-charts-line-chart

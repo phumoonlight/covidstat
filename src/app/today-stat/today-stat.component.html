@@ -3,17 +3,57 @@
   <div class="stat-item confirmed">
     <div class="number">{{ todayStat.confirmedCount | number }}</div>
     <div class="label">Confirmed</div>
+    <div class="graph-wrapper">
+      <ngx-charts-line-chart
+        [scheme]="{
+          domain: ['#E44D25']
+        }"
+        [xAxis]="true"
+        [results]="confirmedGraphData"
+      >
+      </ngx-charts-line-chart>
+    </div>
   </div>
   <div class="stat-item hospitalized">
     <div class="number">{{ todayStat.hospitalizedCount | number }}</div>
     <div class="label">Hospitalized</div>
+    <div class="graph-wrapper">
+      <ngx-charts-line-chart
+        [scheme]="{
+          domain: ['rgb(0, 120, 255)']
+        }"
+        [xAxis]="true"
+        [results]="hospitalizedGraphData"
+      >
+      </ngx-charts-line-chart>
+    </div>
   </div>
   <div class="stat-item recovered">
     <div class="number">{{ todayStat.recoveredCount | number }}</div>
     <div class="label">Recovered</div>
+    <div class="graph-wrapper">
+      <ngx-charts-line-chart
+        [scheme]="{
+          domain: ['rgb(30, 200, 120)']
+        }"
+        [xAxis]="true"
+        [results]="recoveredGraphData"
+      >
+      </ngx-charts-line-chart>
+    </div>
   </div>
   <div class="stat-item death">
     <div class="number">{{ todayStat.deathCount | number }}</div>
     <div class="label">Deaths</div>
+    <div class="graph-wrapper">
+      <ngx-charts-line-chart
+        [scheme]="{
+          domain: ['rgb(44, 44, 44)']
+        }"
+        [xAxis]="true"
+        [results]="deathGraphData"
+      >
+      </ngx-charts-line-chart>
+    </div>
   </div>
 </div>

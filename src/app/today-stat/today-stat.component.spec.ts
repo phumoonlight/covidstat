@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { TodayStatService } from '../shared/services/today-stat.service'
 import { HeaderComponent } from 'src/app/shared/components/header/header.component'
 import { TodayStatComponent } from './today-stat.component'
-import { appInterceptorProviders } from 'src/app/app.interceptor';
+import { appInterceptorProviders } from 'src/app/app.interceptor'
 
 describe('TodayStatComponent', () => {
   let component: TodayStatComponent

@@ -9,7 +9,7 @@ describe('TodayStatService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [TodayStatService, HttpClient],
-      imports: [HttpClientModule]
+      imports: [HttpClientModule],
     })
     service = TestBed.inject(TodayStatService)
   })

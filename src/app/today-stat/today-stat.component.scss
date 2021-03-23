@@ -22,11 +22,16 @@
       font-size: 20px;
       letter-spacing: 2px;
       opacity: 0.8;
+      padding-left: 20px;
     }
     .number {
       font-weight: bold;
       font-size: 40px;
       letter-spacing: 1px;
+      padding-left: 20px;
+    }
+    .graph-wrapper {
+      overflow: scroll;
     }
   }
 }

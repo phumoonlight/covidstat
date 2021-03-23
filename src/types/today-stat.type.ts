@@ -7,4 +7,5 @@ export interface TodayStat {
   newDeathCount: number | string
   newHospitalizedCount: number | string
   newRecoveredCount: number | string
+  updatedDate: string
 }

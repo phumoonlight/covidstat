@@ -45,6 +45,7 @@ export class TodayStatComponent implements OnInit {
     newDeathCount: 0,
     newHospitalizedCount: 0,
     newRecoveredCount: 0,
+    updatedDate: '...',
   }
 
   constructor(
@@ -62,6 +63,7 @@ export class TodayStatComponent implements OnInit {
     this.todayStat.newDeathCount = todayStat.newDeathCount
     this.todayStat.newHospitalizedCount = todayStat.newHospitalizedCount
     this.todayStat.newRecoveredCount = todayStat.newRecoveredCount
+    this.todayStat.updatedDate = todayStat.updatedDate
     const timelineStatList = await this.timelineStatService.getStat()
     this.confirmedGraphData = [
       {

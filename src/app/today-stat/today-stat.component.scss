@@ -42,3 +42,15 @@
     padding-left: 10px;
   }
 }
+
+.api-credit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  * {
+    font-family: monospace;
+  }
+  .label {
+    margin-right: 5px;
+  }
+}

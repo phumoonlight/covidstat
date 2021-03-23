@@ -39,6 +39,7 @@ export class TodayStatService {
       newDeathCount: response.NewDeaths ?? 0,
       newHospitalizedCount: response.NewHospitalized ?? 0,
       newRecoveredCount: response.NewRecovered ?? 0,
+      updatedDate: response.UpdateDate ?? '...',
     }
   }
 }

@@ -5,6 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core'
 })
 export class NewStatCountPipe implements PipeTransform {
   transform(value: number | string): string {
-    return +value > 0 ? `+${value}` : `-${value}`
+    if (+value > 0) return `+${value}`
+    if (+value < 0) return `-${value}`
+    return `(unchanged)`
   }
 }

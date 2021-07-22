@@ -20,7 +20,7 @@ interface TodayStatResponse {
 
 @Injectable()
 export class TodayStatService {
-  private readonly ENDPOINT = '/api/open/today'
+  private readonly ENDPOINT = '/json/covid19v2/getTodayCases.json'
 
   constructor(private http: HttpClient) {}
 

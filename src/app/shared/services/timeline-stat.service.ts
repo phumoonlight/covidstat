@@ -23,7 +23,7 @@ interface TimelineStatResponse {
 
 @Injectable()
 export class TimelineStatService {
-  private readonly ENDPOINT = '/api/open/timeline'
+  private readonly ENDPOINT = '/json/covid19v2/getTimeline.json'
 
   constructor(private http: HttpClient) {}
 
